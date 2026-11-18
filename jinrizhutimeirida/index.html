@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日主题 每日大赛-赛题日历与参赛手册</title>
+<meta name="description" content="今日主题 每日大赛是每天更换命题的线上创作赛事，本站整理赛题日历、评分规则、历届获奖作品与参赛工具。每天零点开题，次日二十三点截止，覆盖摄影、短诗、字体设计、数据可视化等十二类赛道。">
+<meta name="keywords" content="今日主题 每日大赛">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a3b7a'/%3E%3Ccircle cx='32' cy='30' r='13' fill='none' stroke='%23f5b73d' stroke-width='4'/%3E%3Cpath d='M32 17v26M19 30h26' stroke='%23f5b73d' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M16 52h32' stroke='%23ffffff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#141b2b;
+  --ink-2:#3a4761;
+  --ink-3:#6b7793;
+  --paper:#f5f6f3;
+  --card:#ffffff;
+  --line:#dcdcd3;
+  --brand:#1a3b7a;
+  --brand-2:#2a55a5;
+  --accent:#c9852a;
+  --accent-soft:#f5b73d;
+  --tint:#e8edf7;
+  --ok:#2f6b46;
+  --warn:#9a3d2e;
+  --radius:10px;
+  --radius-s:6px;
+  --shadow:0 1px 2px rgba(20,27,43,.06),0 6px 18px rgba(20,27,43,.06);
+  --shadow-h:0 2px 4px rgba(20,27,43,.08),0 10px 26px rgba(20,27,43,.10);
+  --sp-1:8px;--sp-2:14px;--sp-3:22px;--sp-4:34px;--sp-5:52px;
+  --fs-xs:12.5px;--fs-s:14px;--fs-m:16px;--fs-l:18px;--fs-xl:23px;--fs-2xl:32px;--fs-3xl:44px;
+  --sticky-top:0px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:var(--fs-m);line-height:1.75;
+  -webkit-text-size-adjust:100%;
+}
+body.menu-open{overflow:hidden}
+@media (min-width:960px){body.menu-open{overflow:auto}}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--sp-2);color:var(--ink)}
+h1{font-size:var(--fs-2xl);letter-spacing:.5px}
+h2{font-size:var(--fs-xl)}
+h3{font-size:var(--fs-l)}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.25em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:8px;top:8px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 var(--sp-3)}
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#16305f,#1a3b7a 55%,#234b96);
+  color:#f2f5fb;font-size:var(--fs-s);
+  border-bottom:1px solid #0f2650;
+}
+.announce .wrap{display:flex;gap:var(--sp-2);align-items:center;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.announce .tag{
+  background:var(--accent-soft);color:#3a2606;font-weight:700;
+  padding:1px 8px;border-radius:99px;font-size:var(--fs-xs);white-space:nowrap;
+}
+.announce .msg{flex:1;min-width:200px;line-height:1.6}
+.announce .msg b{color:#ffd88a;font-weight:600}
+.announce a.link{color:#cfe0ff;border-bottom:1px dotted #cfe0ff;white-space:nowrap}
+/* ---------- 吸顶页头 ---------- */
+.site-head{
+  position:sticky;top:var(--sticky-top);z-index:55;
+  background:rgba(245,246,243,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(20,27,43,.03);
+}
+.head-in{display:flex;align-items:center;gap:var(--sp-3);padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand .bn{font-weight:800;font-size:17px;letter-spacing:.5px;color:var(--brand);white-space:nowrap}
+.brand .bs{display:block;font-size:11.5px;color:var(--ink-3);font-weight:400;letter-spacing:1px;line-height:1.2}
+.nav-main{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.nav-main a{
+  padding:7px 11px;border-radius:var(--radius-s);font-size:var(--fs-s);
+  color:var(--ink-2);white-space:nowrap;
+}
+.nav-main a:hover{background:var(--tint);text-decoration:none;color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:8px}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px 4px 3px 12px}
+.search-box input{
+  border:0;outline:0;background:transparent;font:inherit;font-size:var(--fs-s);
+  width:150px;padding:4px 2px;color:var(--ink);
+}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;border-radius:99px;
+  font:inherit;font-size:var(--fs-s);padding:5px 13px;cursor:pointer;
+}
+.search-box button:hover{background:var(--brand-2)}
+.btn-entry{
+  display:inline-block;background:var(--accent);color:#2c1b04;font-weight:600;
+  padding:7px 15px;border-radius:99px;font-size:var(--fs-s);white-space:nowrap;
+}
+.btn-entry:hover{background:#d9962f;text-decoration:none}
+.menu-btn{
+  display:none;margin-left:auto;border:1px solid var(--line);background:#fff;
+  border-radius:var(--radius-s);padding:8px 12px;font:inherit;font-size:var(--fs-s);
+  cursor:pointer;color:var(--ink);
+}
+.menu-btn[aria-expanded="true"]{background:var(--tint);border-color:var(--brand)}
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 88% -10%,rgba(245,183,61,.28),transparent 62%),
+    radial-gradient(700px 380px at 6% 110%,rgba(42,85,165,.16),transparent 60%),
+    linear-gradient(160deg,#fbfaf5,#eef1f7 70%);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-4);align-items:center;padding:var(--sp-5) 0 var(--sp-4)}
+.hero-copy .kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-s);
+  color:var(--brand);background:#fff;border:1px solid #c9d5ee;
+  padding:4px 12px;border-radius:99px;margin-bottom:var(--sp-2);
+}
+.hero-copy .kicker i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{font-size:var(--fs-3xl);letter-spacing:1px;margin-bottom:var(--sp-2)}
+.hero .lede{font-size:var(--fs-l);color:var(--ink-2);max-width:36em;margin-bottom:var(--sp-3)}
+.hero-cta{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.btn-primary,.btn-ghost{
+  display:inline-block;padding:11px 22px;border-radius:99px;font-size:var(--fs-m);font-weight:600;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none}
+.btn-ghost{background:#fff;color:var(--brand);border:1px solid #bfcdea}
+.btn-ghost:hover{background:var(--tint);text-decoration:none}
+.hero-stats{display:flex;gap:var(--sp-3);flex-wrap:wrap;border-top:1px dashed #c9d2e2;padding-top:var(--sp-2)}
+.hero-stats div{min-width:98px}
+.hero-stats strong{display:block;font-size:var(--fs-xl);color:var(--brand);line-height:1.2}
+.hero-stats span{font-size:var(--fs-xs);color:var(--ink-3)}
+.hero-art{position:relative;min-height:340px}
+.hero-art svg{width:100%;height:auto;position:relative;z-index:2}
+.hero-badge{
+  position:absolute;z-index:3;left:0;bottom:6%;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-h);padding:10px 14px;font-size:var(--fs-s);color:var(--ink-2);
+  max-width:230px;
+}
+.hero-badge strong{display:block;color:var(--brand);font-size:var(--fs-s)}
+/* ---------- 主体布局 ---------- */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-4);
+  align-items:start;padding:var(--sp-4) 0 var(--sp-5);
+}
+main{min-width:0}
+aside.side{position:sticky;top:calc(var(--sticky-top) + 76px);display:flex;flex-direction:column;gap:var(--sp-2)}
+.sec{margin-bottom:var(--sp-5);scroll-margin-top:calc(var(--sticky-top) + 20px)}
+.sec-head{display:flex;align-items:flex-end;gap:var(--sp-2);border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:var(--sp-3);flex-wrap:wrap}
+.sec-head h2{margin:0;font-size:var(--fs-xl)}
+.sec-head .note{font-size:var(--fs-xs);color:var(--ink-3);margin-left:auto;text-align:right}
+/* ---------- 通用卡片网格 ---------- */
+.grid{display:grid;gap:var(--sp-2)}
+.g-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-2) var(--sp-3);box-shadow:var(--shadow);
+}
+.card h3{font-size:var(--fs-m);margin-bottom:6px}
+.card p:last-child{margin-bottom:0}
+.card .meta{font-size:var(--fs-xs);color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.card:hover{box-shadow:var(--shadow-h);transform:translateY(-2px);transition:.18s}
+.card-hot{border-left:4px solid var(--accent)}
+.card-media img{border-radius:var(--radius-s);aspect-ratio:16/9;object-fit:cover;width:100%;margin-bottom:8px}
+/* ---------- 频道索引 ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{
+  display:inline-block;padding:6px 13px;border-radius:99px;background:#fff;
+  border:1px solid var(--line);font-size:var(--fs-s);color:var(--ink-2);
+}
+.chips a:hover{background:var(--tint);border-color:#b9c9e6;text-decoration:none;color:var(--brand)}
+.chips a small{color:var(--ink-3);margin-left:4px}
+/* ---------- 紧凑列表 ---------- */
+.list-tight{list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.list-tight li{
+  margin:0;padding:11px var(--sp-3);border-bottom:1px solid #edede6;
+  display:flex;gap:var(--sp-2);align-items:baseline;font-size:var(--fs-s);
+}
+.list-tight li:last-child{border-bottom:0}
+.list-tight time{color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:var(--fs-xs)}
+.list-tight .tt{flex:1;min-width:0}
+.list-tight .tagx{font-size:11px;background:var(--tint);color:var(--brand);padding:1px 7px;border-radius:99px;white-space:nowrap}
+/* ---------- 深度解析 ---------- */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--shadow)}
+.deep h3{margin-top:var(--sp-3);padding-top:var(--sp-2);border-top:1px dashed var(--line)}
+.deep h3:first-of-type{margin-top:0;border-top:0;padding-top:0}
+.deep .pull{
+  border-left:4px solid var(--accent);background:#fdf8ee;padding:12px 16px;
+  border-radius:0 var(--radius-s) var(--radius-s) 0;margin:var(--sp-2) 0;color:var(--ink-2);
+}
+.fact-table{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:var(--sp-2) 0}
+.fact-table th,.fact-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.fact-table th{background:#f0f3f9;color:var(--ink-2);font-weight:600;white-space:nowrap}
+.fact-table caption{caption-side:bottom;font-size:var(--fs-xs);color:var(--ink-3);padding-top:6px;text-align:left}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2);margin:var(--sp-2) 0}
+.panel{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px;background:#fafbfd}
+.panel h4{font-size:var(--fs-s);margin:0 0 6px;color:var(--brand)}
+.panel.alt{background:#fdf6ec;border-color:#ecdcbf}
+.panel.alt h4{color:#8a5a13}
+.panel ul{margin:0;padding-left:1.1em;font-size:var(--fs-s)}
+/* ---------- 步骤 ---------- */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.steps li{
+  counter-increment:s;position:relative;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);padding:12px 16px 12px 54px;margin:0;font-size:var(--fs-s);
+}
+.steps li::before{
+  content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;
+  border-radius:50%;background:var(--brand);color:#fff;font-weight:700;font-size:13px;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps strong{display:block;color:var(--ink);font-size:var(--fs-m)}
+.steps span{color:var(--ink-2)}
+/* ---------- FAQ ---------- */
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:8px;padding:0;
+}
+.faq details[open]{border-color:#b9c9e6;box-shadow:var(--shadow)}
+.faq summary{
+  cursor:pointer;padding:12px 16px;font-weight:600;font-size:var(--fs-s);list-style:none;
+  display:flex;gap:10px;align-items:flex-start;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋";color:var(--brand);font-weight:700;flex-shrink:0}
+.faq details[open] summary::before{content:"－"}
+.faq .ans{padding:0 16px 14px 38px;font-size:var(--fs-s);color:var(--ink-2)}
+.faq .ans p:last-child{margin-bottom:0}
+/* ---------- 评论 ---------- */
+.cmts{display:grid;gap:10px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 16px;font-size:var(--fs-s)}
+.cmt .who{display:flex;gap:8px;align-items:center;margin-bottom:6px;font-size:var(--fs-xs);color:var(--ink-3)}
+.cmt .who b{color:var(--ink);font-size:var(--fs-s)}
+.cmt .avatar{width:26px;height:26px;border-radius:50%;background:var(--tint);color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+.cmt p{margin:0}
+.cmt .on{color:var(--brand);border-bottom:1px dotted var(--brand)}
+.stars{color:var(--accent);letter-spacing:1px}
+/* ---------- 侧栏 ---------- */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-2) var(--sp-3);box-shadow:var(--shadow)}
+.side-card h3{font-size:var(--fs-s);letter-spacing:1px;color:var(--ink-3);margin-bottom:8px;text-transform:uppercase}
+.sidenav{list-style:none;margin:0;padding:0}
+.sidenav li{margin:0}
+.sidenav a{
+  display:block;padding:6px 10px;border-radius:var(--radius-s);font-size:var(--fs-s);
+  color:var(--ink-2);border-left:3px solid transparent;
+}
+.sidenav a:hover{background:var(--tint);text-decoration:none}
+.sidenav a.active{background:var(--tint);color:var(--brand);font-weight:600;border-left-color:var(--accent)}
+.rank{list-style:none;margin:0;padding:0;counter-reset:r}
+.rank li{
+  counter-increment:r;display:flex;gap:10px;align-items:baseline;font-size:var(--fs-s);
+  padding:7px 0;border-bottom:1px dashed #e6e7e0;margin:0;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r);font-weight:800;color:var(--ink-3);font-size:var(--fs-s);
+  min-width:18px;font-variant-numeric:tabular-nums;
+}
+.rank li:nth-child(1)::before{color:var(--accent)}
+.rank .rn{flex:1}
+.rank .rv{font-size:var(--fs-xs);color:var(--ink-3)}
+/* ---------- 标签索引 ---------- */
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags a{
+  font-size:var(--fs-xs);background:#fff;border:1px solid var(--line);
+  padding:4px 11px;border-radius:var(--radius-s);color:var(--ink-2);
+}
+.tags a:hover{background:var(--accent-soft);border-color:var(--accent-soft);color:#3a2606;text-decoration:none}
+/* ---------- 页尾 ---------- */
+footer.site-foot{
+  background:#12233f;color:#c9d4e8;margin-top:var(--sp-4);
+  border-top:4px solid var(--accent-soft);font-size:var(--fs-s);
+}
+.foot-in{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--sp-3);padding:var(--sp-4) 0 var(--sp-3)}
+footer.site-foot h4{color:#fff;font-size:var(--fs-s);letter-spacing:1px;margin-bottom:10px}
+footer.site-foot a{color:#c9d4e8}
+footer.site-foot a:hover{color:#fff}
+footer.site-foot ul{list-style:none;margin:0;padding:0}
+footer.site-foot li{margin-bottom:6px;font-size:var(--fs-s)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand .bn{color:#fff;font-weight:800;font-size:16px}
+.foot-note{border-top:1px solid #23406b;padding:var(--sp-2) 0 var(--sp-3);font-size:var(--fs-xs);color:#93a6c5;line-height:1.8}
+.foot-note p{margin:0 0 4px}
+/* ---------- 回到顶部 ---------- */
+.totop{
+  position:fixed;right:18px;bottom:18px;z-index:70;width:46px;height:46px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;cursor:pointer;box-shadow:var(--shadow-h);
+  font-size:13px;font-weight:600;display:none;place-items:center;
+}
+.totop.show{display:grid}
+.totop:hover{background:var(--brand-2)}
+/* ---------- 搜索反馈 ---------- */
+.search-feedback{
+  display:none;background:#fff6f4;border:1px solid #e4b9ae;color:var(--warn);
+  border-radius:var(--radius-s);padding:10px 14px;font-size:var(--fs-s);margin-bottom:var(--sp-2);
+}
+.search-feedback.show{display:block}
+mark.hit{background:#ffe8a8;color:inherit;padding:0 1px;border-radius:2px}
+.hidden-by-search{display:none!important}
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px;gap:var(--sp-3)}
+  .hero-in{grid-template-columns:1fr;gap:var(--sp-3);padding-top:var(--sp-4)}
+  .hero-art{min-height:0;order:-1;max-width:520px}
+  .hero-badge{position:static;margin-top:10px;max-width:none}
+  .g-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-in{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  :root{--fs-3xl:32px;--fs-2xl:26px}
+  .nav-main{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-h);
+    padding:10px var(--sp-3) 16px;flex-direction:column;align-items:stretch;gap:2px;
+  }
+  .site-head{position:sticky}
+  .head-in{flex-wrap:wrap;position:relative}
+  .nav-main.open{display:flex}
+  .nav-main a{padding:10px 12px;border-bottom:1px solid #f0f0ea;border-radius:0}
+  .menu-btn{display:inline-block;order:3}
+  .head-tools{order:4;width:100%;margin-top:8px}
+  .search-box{width:100%}
+  .search-box input{width:100%}
+  .head-tools .btn-entry{margin-left:auto}
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside.side{position:static;order:2}
+  .g-3,.g-2,.split{grid-template-columns:minmax(0,1fr)}
+  .hero h1{font-size:var(--fs-2xl)}
+  .deep{padding:var(--sp-3)}
+}
+@media (max-width:520px){
+  :root{--sp-3:16px;--sp-4:24px;--sp-5:34px;--fs-3xl:29px;--fs-xl:20px}
+  .g-4{grid-template-columns:minmax(0,1fr)}
+  .head-in{gap:8px}
+  .announce .wrap{gap:8px}
+  .foot-in{grid-template-columns:1fr}
+  .totop{width:42px;height:42px;right:12px;bottom:12px}
+  .hero-stats div{min-width:82px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announceBar">
+  <div class="wrap">
+    <span class="tag">今日赛题</span>
+    <p class="msg">11月8日命题「<b>雨天的第三种声音</b>」已开题，12条赛道共收到 <b>1,847</b> 份提交，今晚23:00截止；11月9日命题「八分钟通勤」将于零点公布，评委名单已同步至评分细则页。</p>
+    <a class="link" href="#latest">查看更新记录</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head" id="siteHead">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="回到首页顶部">
+      <svg viewBox="0 0 64 64" role="img" aria-label="每日大赛图形标志：靶心与基准线">
+        <rect width="64" height="64" rx="14" fill="#1a3b7a"/>
+        <circle cx="32" cy="29" r="13" fill="none" stroke="#f5b73d" stroke-width="4"/>
+        <path d="M32 16v26M19 29h26" stroke="#f5b73d" stroke-width="4" stroke-linecap="round"/>
+        <path d="M16 51h32" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="bn">今日主题 每日大赛</span>
+        <span class="bs">每日一题 · 公开评审</span>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMain">菜单</button>
+    <nav class="nav-main" id="navMain" aria-label="主题导航">
+      <a href="#overview">赛事概览</a>
+      <a href="#picks">精选作品</a>
+      <a href="#latest">最新更新</a>
+      <a href="#channels">赛道分类</a>
+      <a href="#deep">深度解析</a>
+      <a href="#guide">参赛指南</a>
+      <a href="#faq">常见问题</a>
+      <a href="#reviews">选手评论</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search-box" role="search" id="searchForm" onsubmit="return false;">
+        <label for="q" class="skip">站内查找赛题或作品</label>
+        <input id="q" type="search" placeholder="查赛题、赛道、作者…" autocomplete="off">
+        <button type="submit" id="searchBtn">查找</button>
+      </form>
+      <a class="btn-entry" href="#guide">报名参赛</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" id="top"></div>
+
+<!-- 首屏 -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <span class="kicker"><i></i>第 1274 期 · 2026年11月8日 · 今日已开题</span>
+      <h1 id="heroTitle">今日主题 每日大赛</h1>
+      <p class="lede">每天零点换一道命题，次日二十三点截止，由三名轮值评委与公开票数共同定名次。摄影、短诗、字体设计、数据可视化等十二类赛道同题异评，参赛者用同一句题目做出十二种答案。</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#guide">看今天怎么投</a>
+        <a class="btn-ghost" href="#picks">读昨日获奖作品</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,274</strong><span>已举办期数（自2023-03-01）</span></div>
+        <div><strong>12</strong><span>常设赛道数</span></div>
+        <div><strong>1,847</strong><span>今日已收稿件</span></div>
+        <div><strong>18:00</strong><span>评委初评公布时刻</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 360" role="presentation">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#dfe7f5"/><stop offset="1" stop-color="#c3d2ea"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f5b73d"/><stop offset="1" stop-color="#c9852a"/>
+          </linearGradient>
+        </defs>
+        <rect x="14" y="14" width="392" height="332" rx="18" fill="url(#g1)"/>
+        <rect x="14" y="14" width="392" height="332" rx="18" fill="none" stroke="#b3c3de" stroke-width="1.5"/>
+        <!-- 日历页 -->
+        <rect x="44" y="52" width="150" height="150" rx="10" fill="#ffffff" stroke="#c0cde0"/>
+        <rect x="44" y="52" width="150" height="30" rx="10" fill="#1a3b7a"/>
+        <rect x="44" y="70" width="150" height="12" fill="#1a3b7a"/>
+        <text x="119" y="73" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ffffff">11 · 08</text>
+        <circle cx="119" cy="137" r="34" fill="none" stroke="url(#g2)" stroke-width="6"/>
+        <circle cx="119" cy="137" r="12" fill="url(#g2)"/>
+        <path d="M119 96v-0M119 178v0M78 137h0M160 137h0" stroke="#c9852a" stroke-width="5" stroke-linecap="round"/>
+        <!-- 赛道条 -->
+        <g>
+          <rect x="214" y="54" width="168" height="26" rx="13" fill="#ffffff" stroke="#c0cde0"/>
+          <circle cx="229" cy="67" r="6" fill="#2a55a5"/>
+          <rect x="243" y="63" width="86" height="7" rx="3.5" fill="#c0cde0"/>
+          <rect x="214" y="92" width="168" height="26" rx="13" fill="#ffffff" stroke="#c0cde0"/>
+          <circle cx="229" cy="105" r="6" fill="#c9852a"/>
+          <rect x="243" y="101" width="108" height="7" rx="3.5" fill="#c0cde0"/>
+          <rect x="214" y="130" width="168" height="26" rx="13" fill="#ffffff" stroke="#c0cde0"/>
+          <circle cx="229" cy="143" r="6" fill="#2f6b46"/>
+          <rect x="243" y="139" width="66" height="7" rx="3.5" fill="#c0cde0"/>
+          <rect x="214" y="168" width="168" height="26" rx="13" fill="#ffffff" stroke="#c0cde0"/>
+          <circle cx="229" cy="181" r="6" fill="#9a3d2e"/>
+          <rect x="243" y="177" width="94" height="7" rx="3.5" fill="#c0cde0"/>
+        </g>
+        <!-- 柱状票数 -->
+        <g>
+          <rect x="52" y="248" width="34" height="72" rx="5" fill="#2a55a5" opacity=".85"/>
+          <rect x="100" y="222" width="34" height="98" rx="5" fill="#1a3b7a"/>
+          <rect x="148" y="266" width="34" height="54" rx="5" fill="#8fa9d3"/>
+          <rect x="196" y="238" width="34" height="82" rx="5" fill="#2a55a5" opacity=".7"/>
+          <rect x="244" y="276" width="34" height="44" rx="5" fill="#8fa9d3"/>
+          <rect x="292" y="256" width="34" height="64" rx="5" fill="#c9852a"/>
+          <rect x="340" y="288" width="34" height="32" rx="5" fill="#e2c9a3"/>
+          <path d="M52 320h322" stroke="#b3c3de" stroke-width="2"/>
+        </g>
+        <path d="M60 210c40-16 70 8 108-4s64-22 98-6 52 6 82-10" fill="none" stroke="#1a3b7a" stroke-width="2.5" stroke-dasharray="6 6" opacity=".55"/>
+      </svg>
+      <div class="hero-badge">
+        <strong>当前领先赛道</strong>
+        数据可视化 · 平均评分 8.4 / 10，短诗赛道 8.1 紧随其后
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+    <main id="main">
+      <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+
+      <!-- 1 领域概览 -->
+      <section class="sec" id="overview" aria-labelledby="h-overview">
+        <div class="sec-head">
+          <h2 id="h-overview">赛事概览：一天一题怎么运转</h2>
+          <span class="note">规则版本 v4.2 · 2026-10-20 生效</span>
+        </div>
+        <p>这套赛制的骨架很简单：零点放题，二十三点收卷，次日十点公布名次。难点在评审。评委三人中一人来自赛道主理人（摄影赛道是陈砚舟，字体赛道是方正字库前设计师林岫），另外两人从报名评审池里随机抽，抽签结果会在开题后两小时内公示。公开票占总分三成，评委分占七成，票数不做加权，一人一票。</p>
+        <div class="grid g-3">
+          <div class="card">
+            <div class="meta"><span>时间结构</span></div>
+            <h3>零点开题 · 二十三点截止</h3>
+            <p>命题由前一日冠军提交的备选题库中随机抽取，题库当前存量 4,316 条，每条标注适合的赛道。摄影与短诗两项每天都有；字体设计、数据可视化、声音采样为隔日轮值。</p>
+          </div>
+          <div class="card">
+            <div class="meta"><span>计分结构</span></div>
+            <h3>评委七成 · 公开票三成</h3>
+            <p>每位评委给出 0—10 分并附一句评语，去掉一个最高一个最低后取均分。公开票按名次折算 0—10 分。同分时看提交时间，先交者优先。</p>
+          </div>
+          <div class="card">
+            <div class="meta"><span>参与门槛</span></div>
+            <h3>匿名可投 · 实名评奖</h3>
+            <p>投稿可以只用昵称，站内获奖与年度积分需要邮箱验证。同一作者每日每赛道限投两件，跨赛道合计不超过四件，超过部分标记为「练习区」。 </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="sec" id="picks" aria-labelledby="h-picks">
+        <div class="sec-head">
+          <h2 id="h-picks">精选内容推荐：昨日三条高分稿</h2>
+          <span class="note">11月7日命题「晾衣绳上的几何」</span>
+        </div>
+        <div class="grid g-2">
+          <article class="card card-media">
+            <img src="https://picsum.photos/seed/dailytheme-geo-01/640/360" width="640" height="360" loading="lazy" alt="多层老楼外墙上交错晾衣绳与方形床单的俯拍画面" style="object-fit:cover">
+            <div class="meta"><span>摄影赛道</span><span>评分 9.2</span><span>作者 @老温</span></div>
+            <h3>《六层楼的斜线》拿下当日全场第一</h3>
+            <p>作者蹲在对面楼顶等了四十分钟，就为等第三块床单被风掀起形成 30° 夹角。评委陈砚舟的评语只有一句：取景框里没有一根多余的杆。这张图在公开票里也排第一，票数 312。</p>
+          </article>
+          <article class="card card-media">
+            <img src="https://picsum.photos/seed/dailytheme-geo-02/640/360" width="640" height="360" loading="lazy" alt="两件白色衬衫悬挂在晾衣绳上形成对称阴影的近景" style="object-fit:cover">
+            <div class="meta"><span>短诗赛道</span><span>评分 8.7</span><span>作者 @阿崎</span></div>
+            <h3>八行诗《夹子》与它的两次修改记录</h3>
+            <p>初稿写了十七行，砍到八行。第二稿把「风」换成「洗衣机甩完的最后一次抽搐」，评委林岫在评语里点名这句，给了 9 分。公开票排名第五，票数 187。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="sec" id="latest" aria-labelledby="h-latest">
+        <div class="sec-head">
+          <h2 id="h-latest">最新更新：赛制与赛题变动记录</h2>
+          <span class="note">按时间倒序，含已生效与待生效项</span>
+        </div>
+        <ul class="list-tight">
+          <li><time datetime="2026-11-08">11-08</time><span class="tt">今日命题「雨天的第三种声音」开放，声音采样赛道比常规早两小时开题（22:00 → 20:00 预开放）。</span><span class="tagx">赛题</span></li>
+          <li><time datetime="2026-11-07">11-07</time><span class="tt">评审抽签结果公示：11月7日短诗赛道评委为林岫、@半坡、@林间有雾，三人中两人首次执裁短诗。</span><span class="tagx">评审</span></li>
+          <li><time datetime="2026-11-06">11-06</time><span class="tt">公开票防刷规则上线：同一 IP 单日投票上限由 20 票调整为 12 票，超限票计入废票池并在次日公示。</span><span class="tagx">规则</span></li>
+          <li><time datetime="2026-11-05">11-05</time><span class="tt">字体设计赛道新增「可读性」必填项，参赛稿须附 16px 正文字号实拍截图，否则评分为待补。</span><span class="tagx">赛道</span></li>
+          <li><time datetime="2026-11-04">11-04</time><span class="tt">数据可视化赛道 10 月月榜公布，@图南 以三件作品累计 26.4 分居首，月榜前五名名单见榜单区。</span><span class="tagx">榜单</span></li>
+          <li><time datetime="2026-11-02">11-02</time><span class="tt">练习区投稿不再计入每日四件上限，但练习区作品不参与名次与积分。</span><span class="tagx">规则</span></li>
+          <li><time datetime="2026-10-30">10-30</time><span class="tt">移动端上传组件升级，单张图片上限从 8MB 提到 15MB，支持 HEIC 直传转码。</span><span class="tagx">工具</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="sec" id="channels" aria-labelledby="h-channels">
+        <div class="sec-head">
+          <h2 id="h-channels">赛道分类入口：十二条线怎么选</h2>
+          <span class="note">括号内为近七日均投稿量</span>
+        </div>
+        <p>新手最容易踩的坑是跨赛道投稿。同一件作品只能进一个赛道，摄影稿投到视觉叙事会被退回。下面按「上手难度 × 平均投稿量」排列，数字取自 11月1日至11月7日的后台统计。</p>
+        <div class="chips">
+          <a href="#picks">手机摄影 <small>486/日</small></a>
+          <a href="#picks">短诗八行 <small>402/日</small></a>
+          <a href="#deep">字体设计 <small>118/日</small></a>
+          <a href="#deep">数据可视化 <small>96/日</small></a>
+          <a href="#guide">声音采样 <small>73/日</small></a>
+          <a href="#latest">手写便签 <small>214/日</small></a>
+          <a href="#reviews">单格漫画 <small>167/日</small></a>
+          <a href="#overview">微型小说 300 字 <small>285/日</small></a>
+          <a href="#faq">菜品摆盘 <small>132/日</small></a>
+          <a href="#picks">日常穿搭 <small>158/日</small></a>
+          <a href="#guide">方言朗读 <small>61/日</small></a>
+          <a href="#deep">时间轴海报 <small>44/日</small></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep" aria-labelledby="h-deep">
+        <div class="sec-head">
+          <h2 id="h-deep">深度解析：公开票真的在决定名次吗</h2>
+          <span class="note">基于 10月10日—11月7日 29 期完整计分数据</span>
+        </div>
+        <div class="deep">
+          <p>先给结论：公开票能不能翻盘，取决于评委分的离散程度。29 期里，公开票第一名与最终第一名重合的有 21 期，重合率 72.4%。剩下 8 期发生反转，其中 6 期的评委分极差都不超过 0.6 分——也就是说，评委之间几乎没分歧时，三成票才真正起作用。</p>
+
+          <blockquote class="pull">可核对判断：当三位评委均分极差 ≤0.6 时，公开票排名第一的作品最终登顶概率为 5/6；极差 ≥1.5 时，该概率降为 3/11。</blockquote>
+
+          <h3>案例一：11月3日字体赛道，票王落榜</h3>
+          <p>11月3日命题「缩小到看不清的字」。@木木子 的作品《9号字》公开票 289 张，排第一；评委分分别为 7.5、7.5、8.0，均分 7.67。另一件作品《缩印报纸标题》票数 164，评委给的是 9.0、8.5、9.0，均分 8.83。最终后者以总分 8.48 对 8.27 反超 0.21 分。票差 125 张没顶住 1.16 分的评委差距。</p>
+          <table class="fact-table">
+            <caption>数据来源：后台计分页导出的 11月3日字体赛道完整榜单（15 件有效投稿）</caption>
+            <thead><tr><th>作品</th><th>公开票</th><th>公开分</th><th>评委均分</th><th>总分</th></tr></thead>
+            <tbody>
+              <tr><td>《9号字》</td><td>289</td><td>10.0</td><td>7.67</td><td>8.27</td></tr>
+              <tr><td>《缩印报纸标题》</td><td>164</td><td>7.8</td><td>8.83</td><td>8.48</td></tr>
+              <tr><td>《只剩横线》</td><td>96</td><td>6.2</td><td>8.17</td><td>7.48</td></tr>
+            </tbody>
+          </table>
+
+          <h3>案例二：同一作者两周内的两次分差</h3>
+          <p>@图南 在 10月22日与 11月5日两次投数据可视化。10月22日命题「一条曲线的自证」，其作品评委分 8.9，公开票排第九，总分 7.9 未进前三；11月5日命题「一年中的十四个雨天」，评委分降到 8.2，公开票升到第二，总分 8.5 却拿了第一。同一作者、评分更低的第二件作品反而登顶，原因是当期评委分极差达到 1.6，票的分量被放大。</p>
+
+          <h3>说法差异：评委原话与转述</h3>
+          <div class="split">
+            <div class="panel">
+              <h4>评委原话（11月5日数据可视化评语）</h4>
+              <ul>
+                <li>「图注占了画面的四成，信息密度够了。」</li>
+                <li>「配色把两个数据系列压成一种灰，读起来费劲。」</li>
+              </ul>
+            </div>
+            <div class="panel alt">
+              <h4>选手群里的转述（事实存疑）</h4>
+              <ul>
+                <li>「有评委嫌灰色太多」——原话只针对两个系列，不涉整体配色。</li>
+                <li>「图注是加分项」——原话未说加分，只描述占比。</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>规则前后变化：投票权重没有动过</h3>
+          <p>有说法称 10 月改过票权。核对规则版本：v4.0（2026-08-15）规定「公开票占三成」；v4.1（2026-09-28）只调整了投票上限与废票认定，权重未变；v4.2（2026-10-20）增加的是评委抽签公示义务。三次版本里，三成这个数字一次没改。改的是刷票口径，不是权重。<strong>推测</strong>部分：反转率从 9 月的 19% 升到 10 月的 28%，可能与投稿总数上涨 34% 导致票数分布更分散有关，尚无后台数据直接验证。</p>
+
+          <h3>把判断拆成可核对项</h3>
+          <table class="fact-table">
+            <caption>判断「票数能翻盘」的核对清单，任一项不成立则结论需下调</caption>
+            <thead><tr><th>核对项</th><th>门槛</th><th>29 期实测</th></tr></thead>
+            <tbody>
+              <tr><td>评委分极差</td><td>≤0.6</td><td>11 期中 9 期发生票权主导</td></tr>
+              <tr><td>票王与评委第一票差</td><td>≥80 票</td><td>7 期中 5 期翻盘</td></tr>
+              <tr><td>有效投稿数</td><td>≥30 件</td><td>样本不足时波动明显</td></tr>
+            </tbody>
+          </table>
+
+          <p>反过来说，这套计分对「评委一致喜欢、票数一般」的作品更友好。想靠社群拉票冲第一，得先祈祷评委吵架。11月3日的 @木木子 就吃过这个亏，其在赛后留言说「下次先看评委是谁再决定投不投」。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="h-guide">
+        <div class="sec-head">
+          <h2 id="h-guide">参赛指南：从看题到提交的六步</h2>
+          <span class="note">首次参赛按此顺序操作</span>
+        </div>
+        <ol class="steps">
+          <li><strong>零点后刷新命题页，记下赛道与字数/尺寸限制</strong><span>摄影赛道要求长边不小于 2000px；短诗赛道硬性八行，标点计入行数；字体设计需附 16px 实拍图。</span></li>
+          <li><strong>确认所选赛道当天是否轮值</strong><span>数据可视化、字体设计、声音采样为隔日制，错日投稿会被自动归入练习区，不计名次。</span></li>
+          <li><strong>在草稿区先存一版，再决定是否公开</strong><span>草稿区不上榜、不被评审看到，可反复改到 22:40。公开后仍可删稿重投一次。</span></li>
+          <li><strong>填写作品说明，写清做法与工具</strong><span>说明限 120 字。评委林岫在 11月1日评审说明里提到，没写做法的稿子平均少 0.4 分。</span></li>
+          <li><strong>提交后核对回执编号</strong><span>回执格式为「日期-赛道-序号」，如 1108-PH-0426。回执丢失即视为未提交。</span></li>
+          <li><strong>次日十点看名次与评语，把评语存下来</strong><span>评语在榜单页保留 30 天。想复议须在公布后 24 小时内提交，附原稿与说明。</span></li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec faq" id="faq" aria-labelledby="h-faq">
+        <div class="sec-head">
+          <h2 id="h-faq">常见问题</h2>
+          <span class="note">按提问频次排序，答案以现行 v4.2 规则为准</span>
+        </div>
+        <details open>
+          <summary>赛题是提前公布的还是当天才出？</summary>
+          <div class="ans"><p>当天零点才出。命题从上一期冠军提交的备选题里抽，备选题库不对外公开。11月8日的「雨天的第三种声音」就是 11月7日摄影赛道冠军 @老温 提交的备选题之一，抽取过程有录屏，录像在公告页可查。</p></div>
+        </details>
+        <details>
+          <summary>「每日大赛」的公开票可以刷吗？</summary>
+          <div class="ans"><p>刷票会被识别。11月6日起同一 IP 单日上限 12 票，超出部分进废票池并公示。10月共处理 3 起异常投票，涉及 412 张废票，相关作品名次未变。投票需要邮箱验证，新注册账号当天不能投。</p></div>
+        </details>
+        <details>
+          <summary>同一件作品能不能投两个赛道？</summary>
+          <div class="ans"><p>不能。系统按首次提交的赛道锁定，第二赛道提交会提示「重复作品」。若作品确实跨类，比如既有文字又有图像的单格漫画，按主表达形式归类，单格漫画归图像，微型小说归文字。</p></div>
+        </details>
+        <details>
+          <summary>字体设计赛道的可读性截图怎么拍？</summary>
+          <div class="ans"><p>用 16px 字号排一段不少于 40 字的中文正文，在正常屏幕亮度下截屏，保留浏览器或软件界面一角以证明字号。11月5日起这是必填项，缺图会标为「待补」，补图窗口到次日 12:00。</p></div>
+        </details>
+        <details>
+          <summary>没拿名次会有积分吗？</summary>
+          <div class="ans"><p>有。有效投稿每件 1 分，进入前五再加 3 分，月度累计 20 分可换一次评审旁听席位。练习区作品不计分。10 月积分榜首 @图南 累计 96 分，其中 42 分来自未进前三的投稿。</p></div>
+        </details>
+        <details>
+          <summary>复议需要什么材料，多久出结果？</summary>
+          <div class="ans"><p>需要原稿文件、回执编号和一句说明争议点。复议由未参与当期评审的第四位评委处理，五个工作日内答复。10月共受理 7 起，2 起改分，改分幅度分别为 0.5 和 0.3。</p></div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="sec" id="reviews" aria-labelledby="h-reviews">
+        <div class="sec-head">
+          <h2 id="h-reviews">选手评论：吐槽与认真建议</h2>
+          <span class="note">取自作品页留言区，保留原话，个别错字未改</span>
+        </div>
+        <div class="cmts">
+          <div class="cmt">
+            <div class="who"><span class="avatar">木</span><b>@木木子</b><span>11-03 23:41</span><span class="stars">★★★☆☆</span></div>
+            <p>《9号字》票第一没拿第一，说不郁闷是假的。但看完评委分我服，7.67 对 8.83，差得不是一点。下次先研究评委是谁。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar">崎</span><b>@阿崎</b><span>11-08 01:12</span><span class="stars">★★★★★</span></div>
+            <p>「雨天的第三种声音」这题比上次的晾衣绳好写太多。我录了楼下排水口、雨刷、还有邻居家空调外机滴水，三条声音剪一起，刚好对上「第三种」。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar">南</span><b>@图南</b><span>11-06 09:20</span><span class="stars">★★★★☆</span></div>
+            <p>《一年中的十四个雨天》那张图我改了四版。第一版配色被评委说压成一种灰，第二版拆成蓝和橙，反倒被说太吵。最后用了中间灰加一条暖线，8.2 分，能接受。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar">半</span><b>@半坡</b><span>11-05 22:03</span><span class="stars">★★☆☆☆</span></div>
+            <p>提个意见：字体赛道的可读性截图要求 11月5日才加，我 11月4日投的稿子被标「待补」，补图窗口到中午十二点，上班族根本赶不上。规则能不能提前一周说。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar">林</span><b>@林间有雾</b><span>11-07 18:47</span><span class="stars">★★★★☆</span></div>
+            <p>短诗赛道八行的限制挺妙。十七行砍到八行，砍掉的全是形容词，剩下的才有名词。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="avatar">老</span><b>@老温</b><span>11-07 21:15</span><span class="stars">★★★★★</span></div>
+            <p>《六层楼的斜线》那张其实废了三十多张，就等到第三块床单被风掀起。评委说没多余杆子，是真的没 P，原片在作品页第二图。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="sec" id="news" aria-labelledby="h-news">
+        <div class="sec-head">
+          <h2 id="h-news">相关资讯：规则、工具与榜单动态</h2>
+          <span class="note">均为站外来源转述，标注出处</span>
+        </div>
+        <div class="grid g-2">
+          <article class="card">
+            <div class="meta"><span>规则解读</span><span>来源：赛制公告页</span></div>
+            <h3>12 票上限实施首日，废票 37 张</h3>
+            <p>11月7日是投票上限从 20 票降到 12 票的第一天，后台记录超限票 37 张，涉及 9 件作品，均未改变名次。公告页给出的说法是「按 IP 计，不按账号计」，共享网络的参赛者需要注意。</p>
+          </article>
+          <article class="card">
+            <div class="meta"><span>工具更新</span><span>来源：移动端更新日志 10-30</span></div>
+            <h3>上传上限提到 15MB，HEIC 直传</h3>
+            <p>手机端现在可以直接传 iPhone 的 HEIC 格式，系统自动转 JPG 并保留 EXIF。摄影赛道评委陈砚舟建议关掉自动美颜，「色温被改了，评委会看出来」。</p>
+          </article>
+          <article class="card">
+            <div class="meta"><span>榜单</span><span>来源：10 月月榜</span></div>
+            <h3>10 月月榜前三：@图南、@木木子、@老温</h3>
+            <p>月榜按当月累计积分排，前三分别 96、88、81 分。积分含有效投稿、前五加分与复议改分，不含练习区。</p>
+          </article>
+          <article class="card">
+            <div class="meta"><span>赛道动态</span><span>来源：声音采样主理人 @周听</span></div>
+            <h3>声音采样赛道冬季改到 20:00 预开放</h3>
+            <p>理由是采样需要户外环境音，冬季天黑早。11月8日起执行，常规截止时间仍是 23:00，不延长。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="related" aria-labelledby="h-related">
+        <div class="sec-head">
+          <h2 id="h-related">相关推荐：按你会搜的词找入口</h2>
+          <span class="note">标签直达对应板块或作品</span>
+        </div>
+        <div class="tags">
+          <a href="#picks">手机摄影比赛怎么投稿</a>
+          <a href="#picks">八行短诗写作模板</a>
+          <a href="#deep">公开票权重怎么算</a>
+          <a href="#deep">评委分极差是什么</a>
+          <a href="#guide">字体可读性截图要求</a>
+          <a href="#guide">回执编号丢了怎么办</a>
+          <a href="#faq">每日大赛能刷票吗</a>
+          <a href="#faq">跨赛道投稿规则</a>
+          <a href="#latest">11月赛题日历</a>
+          <a href="#reviews">声音采样作品点评</a>
+          <a href="#news">15MB 上传上限</a>
+          <a href="#overview">匿名投稿与实名领奖</a>
+        </div>
+      </section>
+
+      <!-- 11 补充板块：榜单与时间线 -->
+      <section class="sec" id="board" aria-labelledby="h-board">
+        <div class="sec-head">
+          <h2 id="h-board">补充板块：本月积分榜与可信度分层</h2>
+          <span class="note">统计截至 2026-11-07 23:59</span>
+        </div>
+        <div class="grid g-2">
+          <div class="card">
+            <h3>11 月积分榜前五</h3>
+            <ol class="rank">
+              <li><span class="rn">@图南 · 数据可视化 / 时间轴海报</span><span class="rv">41 分</span></li>
+              <li><span class="rn">@老温 · 手机摄影</span><span class="rv">36 分</span></li>
+              <li><span class="rn">@阿崎 · 短诗八行</span><span class="rv">29 分</span></li>
+              <li><span class="rn">@木木子 · 字体设计</span><span class="rv">24 分</span></li>
+              <li><span class="rn">@周听 · 声音采样</span><span class="rv">22 分</span></li>
+            </ol>
+          </div>
+          <div class="card">
+            <h3>信息可信度分层</h3>
+            <ul>
+              <li><strong>可核对事实：</strong>11月3日字体赛道分表、11月6日投票上限调整、回执编号格式。</li>
+              <li><strong>评委原话：</strong>已标注出处与日期，未改措辞。</li>
+              <li><strong>选手转述：</strong>群聊与留言区说法，与评委原话有出入的已并列。</li>
+              <li><strong>推测：</strong>反转率上升与投稿量上涨的关联，尚无后台数据验证。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top:var(--sp-2)">
+          <h3>11 月关键时间线</h3>
+          <ul class="list-tight" style="border:0;box-shadow:none;padding-left:0">
+            <li><time datetime="2026-11-08">11-08</time><span class="tt">命题「雨天的第三种声音」开题，声音采样预开放提前至 20:00</span></li>
+            <li><time datetime="2026-11-06">11-06</time><span class="tt">投票上限 20 → 12，废票池公示机制生效</span></li>
+            <li><time datetime="2026-11-05">11-05</time><span class="tt">字体赛道可读性截图列为必填</span></li>
+            <li><time datetime="2026-11-04">11-04</time><span class="tt">10 月月榜公布，@图南 96 分居首</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="辅助导航与推荐">
+      <div class="side-card">
+        <h3>栏内导航</h3>
+        <ul class="sidenav" id="sideNav">
+          <li><a href="#overview">赛事概览</a></li>
+          <li><a href="#picks">精选内容推荐</a></li>
+          <li><a href="#latest">最新更新</a></li>
+          <li><a href="#channels">赛道分类入口</a></li>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">参赛指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#reviews">选手评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#related">相关推荐</a></li>
+          <li><a href="#board">积分榜与时间线</a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>今日赛道热度</h3>
+        <ol class="rank">
+          <li><span class="rn">手机摄影</span><span class="rv">486 件</span></li>
+          <li><span class="rn">短诗八行</span><span class="rv">402 件</span></li>
+          <li><span class="rn">微型小说 300 字</span><span class="rv">285 件</span></li>
+          <li><span class="rn">手写便签</span><span class="rv">214 件</span></li>
+          <li><span class="rn">单格漫画</span><span class="rv">167 件</span></li>
+        </ol>
+      </div>
+      <div class="side-card">
+        <h3>规则备忘</h3>
+        <p style="font-size:var(--fs-s);margin:0;color:var(--ink-2)">今日截止 <strong>23:00</strong>；回执编号以「1108-赛道-序号」开头；练习区不计分；复议窗口 24 小时。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="每日大赛页尾标志">
+            <rect width="64" height="64" rx="14" fill="#234b96"/>
+            <circle cx="32" cy="29" r="13" fill="none" stroke="#f5b73d" stroke-width="4"/>
+            <path d="M32 16v26M19 29h26" stroke="#f5b73d" stroke-width="4" stroke-linecap="round"/>
+            <path d="M16 51h32" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span class="bn">今日主题 每日大赛</span>
+        </div>
+        <p style="margin:0 0 8px;font-size:var(--fs-s)">一天一道题，十二个赛道同题异评，评审规则公开可查。</p>
+        <p style="margin:0;font-size:var(--fs-xs);color:#93a6c5">页面更新时间：2026-11-08 09:20，对应「最新更新」中的赛题与规则变动条目。</p>
+      </div>
+      <div>
+        <h4>参赛入口</h4>
+        <ul>
+          <li><a href="#guide">首次投稿六步</a></li>
+          <li><a href="#faq">复议与回执</a></li>
+          <li><a href="#channels">十二条赛道</a></li>
+          <li><a href="#overview">计分规则 v4.2</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>看作品</h4>
+        <ul>
+          <li><a href="#picks">昨日高分稿</a></li>
+          <li><a href="#reviews">选手点评</a></li>
+          <li><a href="#board">11 月积分榜</a></li>
+          <li><a href="#related">关键词索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>规则与说明</h4>
+        <ul>
+          <li><a href="#latest">更新记录</a></li>
+          <li><a href="#deep">公开票数据</a></li>
+          <li><a href="#news">工具与上传</a></li>
+          <li><a href="#board">可信度分层</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>示例数据说明：页面中的投稿量、票数、评分与作者昵称均为演示用示例条目，除已标注出处与日期的规则变动外，不构成对任何真实个人或机构的陈述。</p>
+      <p>内容以 2026-11-08 现行规则 v4.2 为准；评分表与公告截图未随页附出，核对请以当期榜单页为准。</p>
+      <p>© 2023—2026 今日主题 每日大赛 · 站内规则文本与榜单结构保留权利，转载注明来源。</p>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" type="button" aria-label="回到页面顶部">顶部</button>
+
+<script>
+(function(){
+  // 动态计算吸顶高度，给页头留出公告条高度
+  var bar = document.getElementById('announceBar');
+  var head = document.getElementById('siteHead');
+  function setSticky(){
+    var h = bar ? bar.offsetHeight : 0;
+    document.documentElement.style.setProperty('--sticky-top', h + 'px');
+  }
+  setSticky();
+  window.addEventListener('resize', setSticky);
+
+  // 移动端菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var navMain = document.getElementById('navMain');
+  if(menuBtn && navMain){
+    menuBtn.addEventListener('click', function(){
+      var open = navMain.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
+    });
+    navMain.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:820px)').matches){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        document.body.classList.remove('menu-open');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && navMain.classList.contains('open')){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        document.body.classList.remove('menu-open');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // 平滑滚动带偏移
+  function scrollToId(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    var offset = (bar ? bar.offsetHeight : 0) + (head ? head.offsetHeight : 0) + 8;
+    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({top: top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if(!a) return;
+    var id = a.getAttribute('href').slice(2);
+    if(!id) return;
+    var target = document.getElementById(id);
+    if(target){
+      e.preventDefault();
+      scrollToId(id);
+      history.replaceState(null, '', '#' + id);
+    }
+  });
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){ return document.getElementById(a.getAttribute('href').slice(2)); }).filter(Boolean);
+  function highlight(){
+    var offset = (bar ? bar.offsetHeight : 0) + (head ? head.offsetHeight : 0) + 40;
+    var y = window.pageYOffset + offset;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= y) current = sec.id;
+    });
+    sideLinks.forEach(function(a){
+      var on = a.getAttribute('href') === '#' + current;
+      a.classList.toggle('active', on);
+      if(on){ a.setAttribute('aria-current','true'); } else { a.removeAttribute('aria-current'); }
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  function toggleTop(){
+    if(window.pageYOffset > 480){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', toggleTop, {passive:true});
+  toggleTop();
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+
+  // 本地查找
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var feedback = document.getElementById('searchFeedback');
+  var blocks = Array.prototype.slice.call(document.querySelectorAll('main .sec'));
+  var titles = Array.prototype.slice.call(document.querySelectorAll('main h2, main h3, main summary, main .cmt'));
+  function clearMarks(root){
+    Array.prototype.slice.call(root.querySelectorAll('mark.hit')).forEach(function(m){
+      var p = m.parentNode;
+      p.replaceChild(document.createTextNode(m.textContent), m);
+      p.normalize();
+    });
+  }
+  function markNode(node, term){
+    if(node.nodeType === 3){
+      var txt = node.nodeValue;
+      var idx = txt.toLowerCase().indexOf(term.toLowerCase());
+      if(idx === -1) return;
+      var frag = document.createDocumentFragment();
+      var last = 0;
+      while(idx !== -1){
+        frag.appendChild(document.createTextNode(txt.slice(last, idx)));
+        var m = document.createElement('mark');
+        m.className = 'hit';
+        m.textContent = txt.slice(idx, idx + term.length);
+        frag.appendChild(m);
+        last = idx + term.length;
+        idx = txt.toLowerCase().indexOf(term.toLowerCase(), last);
+      }
+      frag.appendChild(document.createTextNode(txt.slice(last)));
+      node.parentNode.replaceChild(frag, node);
+    } else if(node.nodeType === 1 && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE'){
+      Array.prototype.slice.call(node.childNodes).forEach(function(c){ markNode(c, term); });
+    }
+  }
+  function doSearch(){
+    var term = (input.value || '').trim();
+    blocks.forEach(function(b){ b.classList.remove('hidden-by-search'); });
+    titles.forEach(function(t){ clearMarks(t); });
+    if(!term){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var hits = 0;
+    blocks.forEach(function(b){
+      var text = (b.textContent || '').toLowerCase();
+      if(text.indexOf(term.toLowerCase()) !== -1){ hits++; } else { b.classList.add('hidden-by-search'); }
+    });
+    if(hits === 0){
+      feedback.classList.add('show');
+      feedback.textContent = '没有找到与「' + term + '」匹配的板块。可以换个说法，比如「短诗」「可读性」「公开票」或「回执编号」。';
+      blocks.forEach(function(b){ b.classList.remove('hidden-by-search'); });
+    }else{
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      titles.forEach(function(t){ markNode(t, term); });
+    }
+  }
+  if(form){
+    form.addEventListener('submit', function(e){ e.preventDefault(); doSearch(); });
+    input.addEventListener('search', function(){ if(!input.value.trim()) doSearch(); });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "今日主题 每日大赛",
+  "alternateName": "每日大赛",
+  "description": "每天零点更换命题的线上创作赛事，覆盖手机摄影、短诗八行、字体设计、数据可视化等十二类赛道，公开评审与公开票共同计分。",
+  "inLanguage": "zh-CN",
+  "dateModified": "2026-11-08"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "赛题是提前公布的还是当天才出？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当天零点才出。命题从上一期冠军提交的备选题里抽，备选题库不对外公开。11月8日的「雨天的第三种声音」来自11月7日摄影赛道冠军 @老温 提交的备选题，抽取过程有录屏。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "每日大赛的公开票可以刷吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "刷票会被识别。11月6日起同一 IP 单日上限12票，超出部分进废票池并公示。10月共处理3起异常投票，涉及412张废票，相关作品名次未变。投票需要邮箱验证。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "同一件作品能不能投两个赛道？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能。系统按首次提交的赛道锁定，第二赛道提交会提示重复作品。跨类作品按主表达形式归类，单格漫画归图像，微型小说归文字。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "字体设计赛道的可读性截图怎么拍？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "用16px字号排一段不少于40字的中文正文，在正常屏幕亮度下截屏，保留界面一角以证明字号。11月5日起为必填项，缺图标为待补，补图窗口到次日12:00。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "没拿名次会有积分吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有。有效投稿每件1分，进入前五再加3分，月度累计20分可换一次评审旁听席位。练习区作品不计分。10月积分榜首 @图南 累计96分。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "复议需要什么材料，多久出结果？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "需要原稿文件、回执编号和一句说明争议点。复议由未参与当期评审的第四位评委处理，五个工作日内答复。10月共受理7起，2起改分，幅度为0.5和0.3。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+            </html>
