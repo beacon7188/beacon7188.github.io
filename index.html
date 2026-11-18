@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>就要草视频免费在线观看-短片观看与内容指南</title>
+<meta name="description" content="就要草视频免费在线观看频道整理短片观看入口、选集索引与播放体验要点，覆盖草根影像、方言短片、纪录短片、剧情短片、剪辑合集等内容方向，提供清晰可查的更新时间与条目信息，便于快速找到想看的一集。">
+<meta name="keywords" content="就要草视频免费在线观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f6b3a'/%3E%3Cpath d='M32 50c-9-6-14-12-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 7-5 13-14 19z' fill='%23c9e8b0'/%3E%3Cpath d='M32 50V24' stroke='%232f6b3a' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+:root{
+  --green:#2f6b3a;
+  --green-deep:#1e4a28;
+  --leaf:#7fb069;
+  --leaf-soft:#e6f1dc;
+  --clay:#b3542e;
+  --ink:#1c231b;
+  --ink-2:#3d4a3a;
+  --muted:#6b7768;
+  --line:#d8e2d2;
+  --bg:#f7f9f4;
+  --card:#ffffff;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(30,74,40,.08);
+  --shadow-lift:0 6px 18px rgba(30,74,40,.14);
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:28px;
+  --space-5:44px;
+  --font: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --sticky-h:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:var(--green-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--space-2)}
+h2{font-size:1.4rem;color:var(--green-deep);letter-spacing:.5px}
+h3{font-size:1.08rem;color:var(--ink)}
+p{margin:0 0 var(--space-3)}
+ul,ol{margin:0 0 var(--space-3);padding-left:1.3em}
+li{margin-bottom:6px}
+section[id]{scroll-margin-top:calc(var(--sticky-h) + 14px)}
+
+/* 吸顶公告条与页头 */
+#notice-bar{
+  background:var(--green-deep);
+  color:#e9f4e2;
+  font-size:.82rem;
+  position:sticky;
+  top:0;
+  z-index:60;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+#notice-bar .inner{
+  max-width:1180px;margin:0 auto;padding:7px 16px;
+  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+}
+#notice-bar .tag{
+  background:var(--leaf);color:var(--green-deep);
+  font-weight:700;border-radius:4px;padding:1px 7px;font-size:.74rem;letter-spacing:1px;
+}
+#notice-bar a{color:#d9eecb}
+#site-header{
+  position:sticky;top:0;z-index:55;
+  background:rgba(247,249,244,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+#site-header .inner{
+  max-width:1180px;margin:0 auto;padding:10px 16px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:38px;height:38px}
+.brand-text{font-weight:800;font-size:1.05rem;color:var(--green-deep);letter-spacing:.5px}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:200px}
+.main-nav a{
+  padding:6px 10px;border-radius:20px;font-size:.9rem;color:var(--ink-2);
+  white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--leaf-soft);color:var(--green-deep);text-decoration:none}
+:focus-visible{outline:2px solid var(--clay);outline-offset:2px;border-radius:4px}
+.search-wrap{display:flex;align-items:center;gap:6px}
+.search-wrap input{
+  font-family:var(--font);font-size:.88rem;padding:7px 12px;border-radius:20px;
+  border:1px solid var(--line);background:#fff;width:170px;
+}
+.search-wrap input:focus{outline:none;border-color:var(--leaf);box-shadow:0 0 0 3px rgba(127,176,105,.22)}
+.search-wrap button{
+  font-family:var(--font);font-size:.86rem;padding:7px 14px;border-radius:20px;
+  border:none;background:var(--green);color:#fff;cursor:pointer;
+}
+.search-wrap button:hover{background:var(--green-deep)}
+.menu-btn{display:none;font-family:var(--font);font-size:.86rem;padding:6px 12px;
+  border:1px solid var(--line);background:#fff;border-radius:20px;cursor:pointer;color:var(--green-deep)}
+#search-feedback{font-size:.8rem;color:var(--clay);width:100%;padding:0 16px 6px;max-width:1180px;margin:0 auto;display:none}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#eef6e6 0%,#f7f9f4 55%,#e3efdb 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .inner{
+  max-width:1180px;margin:0 auto;padding:var(--space-5) 16px var(--space-4);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+}
+.hero .kicker{
+  display:inline-block;font-size:.76rem;letter-spacing:2px;color:var(--green);
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:3px 12px;margin-bottom:14px;
+}
+.hero h1{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--green-deep);margin-bottom:14px}
+.hero p.lead{font-size:1rem;color:var(--ink-2);max-width:32em;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-block;padding:10px 22px;border-radius:26px;font-size:.92rem;font-weight:600;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-2px);text-decoration:none}
+.btn-ghost{border:1px solid var(--green);color:var(--green-deep);background:#fff}
+.btn-ghost:hover{background:var(--leaf-soft);transform:translateY(-2px);text-decoration:none}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{font-size:.8rem;color:var(--muted)}
+.hero-stats strong{display:block;font-size:1.25rem;color:var(--green-deep);font-weight:800}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:360px;height:auto}
+.hero-art .floating{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);font-size:.74rem;padding:6px 10px;color:var(--ink-2);
+}
+.hero-art .f1{top:6%;left:2%}
+.hero-art .f2{bottom:8%;right:0}
+
+/* 布局 */
+.layout{
+  max-width:1180px;margin:0 auto;padding:var(--space-4) 16px var(--space-5);
+  display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start;
+}
+main{min-width:0}
+aside{position:sticky;top:calc(var(--sticky-h) + 16px);min-width:0}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--space-4);margin-bottom:var(--space-4);box-shadow:var(--shadow);
+}
+.card > h2:first-child{margin-top:0}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:var(--space-3)}
+.section-head p{margin:0;font-size:.82rem;color:var(--muted)}
+.more-link{font-size:.84rem;white-space:nowrap}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.overview-item{border-left:3px solid var(--leaf);padding:4px 0 4px 14px}
+.overview-item h3{margin-bottom:4px;font-size:.98rem}
+.overview-item p{font-size:.86rem;color:var(--ink-2);margin:0}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.pick-card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.pick-card img{width:100%;height:128px;object-fit:cover}
+.pick-card .body{padding:12px 14px 14px}
+.pick-card h3{font-size:.95rem;margin-bottom:6px}
+.pick-card p{font-size:.8rem;color:var(--muted);margin:0 0 8px}
+.pick-card .meta{font-size:.74rem;color:var(--clay)}
+
+/* 列表 */
+.update-list{list-style:none;padding:0;margin:0}
+.update-list li{
+  display:flex;gap:14px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);
+}
+.update-list li:last-child{border-bottom:none}
+.update-list time{font-size:.76rem;color:var(--green);flex-shrink:0;width:74px;font-variant-numeric:tabular-nums}
+.update-list .t{font-size:.9rem;flex:1}
+.update-list .t a{font-weight:600}
+.update-list .dur{font-size:.74rem;color:var(--muted)}
+
+/* 分类索引 */
+.channel-tags{display:flex;flex-wrap:wrap;gap:10px}
+.channel-tags a{
+  display:inline-block;padding:6px 14px;border-radius:20px;background:var(--leaf-soft);
+  color:var(--green-deep);font-size:.85rem;border:1px solid transparent;
+}
+.channel-tags a:hover{border-color:var(--leaf);text-decoration:none}
+
+/* 深度解析 */
+.analysis h3{margin-top:var(--space-4);padding-top:var(--space-2);border-top:1px solid var(--line)}
+.analysis h3:first-of-type{margin-top:0;border-top:none;padding-top:0}
+.analysis p{font-size:.95rem}
+.analysis blockquote{
+  margin:var(--space-3) 0;padding:12px 16px;background:var(--leaf-soft);
+  border-left:3px solid var(--green);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:.92rem;color:var(--ink-2);
+}
+.check-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:var(--space-3) 0}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--leaf-soft);color:var(--green-deep);font-weight:700}
+
+/* 步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+.steps li{
+  counter-increment:step;position:relative;padding:0 0 var(--space-3) 46px;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:0;top:2px;width:30px;height:30px;
+  border-radius:50%;background:var(--green);color:#fff;font-weight:700;font-size:.85rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps li strong{display:block;font-size:.94rem;margin-bottom:2px}
+.steps li p{font-size:.86rem;color:var(--ink-2);margin:0}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;background:#fff;overflow:hidden}
+details.faq summary{
+  cursor:pointer;padding:12px 16px;font-weight:600;font-size:.93rem;color:var(--green-deep);
+  list-style:none;position:relative;padding-right:40px;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:12px;font-size:1.1rem;color:var(--leaf);
+  transition:transform .18s ease;
+}
+details.faq[open] summary::after{transform:rotate(45deg)}
+details.faq .ans{padding:0 16px 14px;font-size:.88rem;color:var(--ink-2)}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.comment{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px;
+  font-size:.86rem;
+}
+.comment .who{font-size:.76rem;color:var(--muted);margin-bottom:6px;display:flex;justify-content:space-between}
+.comment p{margin:0;color:var(--ink-2)}
+.comment .who .score{color:var(--clay);font-weight:700}
+
+/* 资讯 */
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{padding:10px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:baseline}
+.news-list li:last-child{border-bottom:none}
+.news-list .date{font-size:.75rem;color:var(--green);width:70px;flex-shrink:0}
+.news-list .ttl{font-size:.9rem}
+.news-list .src{font-size:.74rem;color:var(--muted);margin-left:6px}
+
+/* 推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+.rec-tags a{
+  font-size:.82rem;padding:5px 12px;border-radius:6px;border:1px solid var(--line);
+  background:#fff;color:var(--ink-2);
+}
+.rec-tags a:hover{border-color:var(--green);color:var(--green-deep);text-decoration:none}
+
+/* 榜单 */
+.rank-list{list-style:none;counter-reset:rank;padding:0;margin:0}
+.rank-list li{
+  counter-increment:rank;display:flex;gap:14px;align-items:baseline;
+  padding:9px 0;border-bottom:1px dashed var(--line);font-size:.9rem;
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rank);flex-shrink:0;width:24px;height:24px;border-radius:6px;
+  background:var(--leaf-soft);color:var(--green-deep);font-weight:800;font-size:.78rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--green);color:#fff}
+.rank-list .hot{font-size:.74rem;color:var(--clay);margin-left:auto;flex-shrink:0}
+
+/* 侧栏 */
+.side-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--space-3);margin-bottom:var(--space-3);box-shadow:var(--shadow);
+}
+.side-card h2{font-size:.95rem;margin-bottom:var(--space-2);color:var(--green-deep)}
+.side-nav{list-style:none;padding:0;margin:0}
+.side-nav a{
+  display:block;padding:6px 10px;border-radius:6px;font-size:.85rem;color:var(--ink-2);
+  border-left:2px solid transparent;
+}
+.side-nav a:hover,.side-nav a.active{
+  background:var(--leaf-soft);color:var(--green-deep);border-left-color:var(--green);text-decoration:none;
+}
+.side-related{list-style:none;padding:0;margin:0;font-size:.85rem}
+.side-related li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.side-related li:last-child{border-bottom:none}
+
+/* 页尾 */
+footer{
+  background:var(--green-deep);color:#cfe3c3;font-size:.84rem;
+  border-top:4px solid var(--green);
+}
+footer .inner{max-width:1180px;margin:0 auto;padding:var(--space-4) 16px var(--space-3)}
+.footer-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px;margin-bottom:var(--space-3)}
+.footer-cols h3{color:#fff;font-size:.92rem;margin-bottom:10px}
+.footer-cols ul{list-style:none;padding:0;margin:0}
+.footer-cols li{margin-bottom:6px}
+footer a{color:#bfd8b3}
+footer a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:14px;font-size:.78rem;color:#a8c89b}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand svg{width:32px;height:32px}
+.footer-brand strong{color:#fff;font-size:.98rem}
+
+/* 回到顶部 */
+#back-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;display:none;
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--green);color:#fff;font-size:1.05rem;box-shadow:var(--shadow-lift);
+}
+#back-top:hover{background:var(--green-deep)}
+#back-top.show{display:block}
+
+/* 响应式 */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;order:2}
+  main{order:1}
+  .hero .inner{grid-template-columns:1fr;gap:24px;padding-top:var(--space-4)}
+  .hero-art{order:-1;max-width:300px;margin:0 auto}
+}
+@media (max-width:720px){
+  :root{--sticky-h:auto}
+  #site-header .inner{gap:10px}
+  .menu-btn{display:inline-block}
+  .main-nav{
+    display:none;flex-basis:100%;order:5;flex-direction:column;gap:2px;
+    border-top:1px solid var(--line);padding-top:10px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:8px 10px;font-size:.9rem}
+  .search-wrap{order:4;width:100%}
+  .search-wrap input{flex:1;width:auto}
+  .hero-stats{gap:18px}
+  .pick-grid{grid-template-columns:1fr 1fr}
+  .comment-grid{grid-template-columns:1fr}
+  #notice-bar .inner{font-size:.76rem}
+  .update-list li{flex-wrap:wrap;gap:4px 10px}
+  .update-list time{width:auto}
+}
+@media (max-width:400px){
+  .pick-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div id="notice-bar">
+  <div class="inner">
+    <span class="tag">更新</span>
+    <span>就要草视频免费在线观看条目库 11 月 8 日同步：新增《村口老槐树》第 6 集、《夜班公交 21 路》正片与 3 条方言短片，选集索引已调整。</span>
+    <a href="/#updates">查看更新清单</a>
+  </div>
+</div>
+
+<header id="site-header">
+  <div class="inner">
+    <a class="brand" href="/#top" aria-label="返回首页">
+      <svg viewBox="0 0 64 64" role="img" aria-label="草叶与播放标记图形">
+        <rect width="64" height="64" rx="14" fill="#2f6b3a"/>
+        <path d="M32 52c-10-7-15-13-15-21a8.5 8.5 0 0 1 15-5 8.5 8.5 0 0 1 15 5c0 8-5 14-15 21z" fill="#c9e8b0"/>
+        <path d="M32 50V23" stroke="#2f6b3a" stroke-width="3" stroke-linecap="round"/>
+        <path d="M27 33l10 5-10 5z" fill="#b3542e"/>
+      </svg>
+      <span class="brand-text">就要草视频免费在线观看</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">导航菜单</button>
+    <nav class="main-nav" id="main-nav" aria-label="主题导航">
+      <a href="/#overview">内容概览</a>
+      <a href="/#picks">精选短片</a>
+      <a href="/#updates">更新动态</a>
+      <a href="/#channels">分类索引</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#rank">本周榜单</a>
+    </nav>
+    <div class="search-wrap">
+      <input type="search" id="search-input" placeholder="搜索条目或频道" aria-label="搜索条目或频道">
+      <button type="button" id="search-btn">查找</button>
+    </div>
+  </div>
+  <div id="search-feedback" role="status" aria-live="polite"></div>
+</header>
+
+<div class="hero" id="top">
+  <div class="inner">
+    <div>
+      <span class="kicker">草根影像 · 短片条目库</span>
+      <h1>就要草视频免费在线观看</h1>
+      <p class="lead">收录村拍短片、方言段子、纪录短打与素人剧情片，按集数与时长编好索引。条目页写清发布时间、拍摄地和片源版本，找一集不用翻十个平台。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">进入精选条目</a>
+        <a class="btn btn-ghost" href="/#guide">看观看指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,286</strong>条短片索引</div>
+        <div><strong>42</strong>个地方拍摄团队</div>
+        <div><strong>11 月 8 日</strong>最近同步</div>
+        <div><strong>9</strong>个内容频道</div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 380 300" role="img" aria-label="草叶、胶片与播放窗口的组合插画">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e3efdb"/>
+            <stop offset="1" stop-color="#f7f9f4"/>
+          </linearGradient>
+        </defs>
+        <rect x="10" y="16" width="360" height="268" rx="18" fill="url(#sky)" stroke="#d8e2d2"/>
+        <path d="M40 250c30-40 60-58 100-62s70 8 100 26 60 30 96 34" fill="none" stroke="#7fb069" stroke-width="5" stroke-linecap="round"/>
+        <path d="M70 232c14-30 34-44 58-46 20-2 34 8 44 24" fill="none" stroke="#2f6b3a" stroke-width="4" stroke-linecap="round"/>
+        <rect x="120" y="62" width="160" height="104" rx="12" fill="#1e4a28"/>
+        <rect x="132" y="74" width="136" height="80" rx="6" fill="#c9e8b0"/>
+        <path d="M184 100l34 18-34 18z" fill="#b3542e"/>
+        <circle cx="96" cy="86" r="14" fill="#7fb069"/>
+        <circle cx="106" cy="80" r="5" fill="#e6f1dc"/>
+        <circle cx="88" cy="78" r="5" fill="#e6f1dc"/>
+        <path d="M96 100v26" stroke="#2f6b3a" stroke-width="3" stroke-linecap="round"/>
+        <rect x="226" y="180" width="108" height="16" rx="8" fill="#d8e2d2"/>
+        <rect x="226" y="204" width="76" height="16" rx="8" fill="#e6f1dc"/>
+        <rect x="52" y="176" width="86" height="56" rx="8" fill="#fff" stroke="#d8e2d2"/>
+        <rect x="62" y="188" width="66" height="8" rx="4" fill="#7fb069"/>
+        <rect x="62" y="202" width="48" height="8" rx="4" fill="#d8e2d2"/>
+        <rect x="62" y="216" width="56" height="8" rx="4" fill="#d8e2d2"/>
+      </svg>
+      <span class="floating f1">选集按发布时间排</span>
+      <span class="floating f2">方言原声 · 未删节</span>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <main>
+
+    <section class="card" id="overview">
+      <div class="section-head">
+        <h2>内容概览：草根影像的四个入口</h2>
+        <p>按拍摄方式与片长区分</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-item">
+          <h3>村拍剧情短片</h3>
+          <p>多为 6—15 分钟单集，固定班底，机位简单但台词生活化。《村口老槐树》《小镇理发师》都在这一类。</p>
+        </div>
+        <div class="overview-item">
+          <h3>方言段子与情景</h3>
+          <p>3 分钟以内居多，川渝、鲁西南、粤西口音集中。字幕版本与原始版本常同时存在。</p>
+        </div>
+        <div class="overview-item">
+          <h3>纪录短打</h3>
+          <p>跟拍集市、庙会、手艺人，8—25 分钟。拍摄地与拍摄年份是检索的主要依据。</p>
+        </div>
+        <div class="overview-item">
+          <h3>素人剪辑合集</h3>
+          <p>二次剪辑或跨集拼接，片段来源杂，需要核对原片出处，条目里会标注剪辑者。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="picks">
+      <div class="section-head">
+        <h2>精选短片推荐</h2>
+        <a class="more-link" href="/#channels">按频道筛选 →</a>
+      </div>
+      <div class="pick-grid">
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort01/420/260" width="420" height="260" loading="lazy" alt="村口老槐树下围坐的村民与手持拍摄设备">
+          <div class="body">
+            <h3>《村口老槐树》第 6 集</h3>
+            <p>鲁西南村拍剧情，老槐树要修枝，两家人为一块空地争起来。全片 18 分 40 秒。</p>
+            <span class="meta">11 月 6 日发布 · 原声带字幕</span>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort02/420/260" width="420" height="260" loading="lazy" alt="夜班公交车内乘客与窗外灯光">
+          <div class="body">
+            <h3>《夜班公交 21 路》正片</h3>
+            <p>凌晨两点的末班车，司机与三个乘客的对话撑起全片。拍摄地在城东公交场站。</p>
+            <span class="meta">11 月 4 日发布 · 26 分钟</span>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort03/420/260" width="420" height="260" loading="lazy" alt="集市摊位上摆放的竹编手工艺品">
+          <div class="body">
+            <h3>《竹篾匠的一天》纪录短打</h3>
+            <p>跟拍手艺人从破竹到成筐，全程无旁白，只剩刀口与竹丝的声响。</p>
+            <span class="meta">11 月 2 日发布 · 14 分钟</span>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort04/420/260" width="420" height="260" loading="lazy" alt="理发店内老式转椅与镜子">
+          <div class="body">
+            <h3>《小镇理发师》第 3 集</h3>
+            <p>烫发水涨价，理发师老周把价目表改了又改。台词多，节奏慢，适合当方言听力材料。</p>
+            <span class="meta">10 月 29 日发布 · 11 分钟</span>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort05/420/260" width="420" height="260" loading="lazy" alt="雨后泥路上的三轮车与塑料棚">
+          <div class="body">
+            <h3>《赶集路上》合集版</h3>
+            <p>把前四季赶集片段剪成 35 分钟合集，新增两段未播镜头，片头注明拼接顺序。</p>
+            <span class="meta">10 月 26 日整理 · 素人剪辑</span>
+          </div>
+        </article>
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/caoshort06/420/260" width="420" height="260" loading="lazy" alt="灶台旁煮饭的老人与柴火">
+          <div class="body">
+            <h3>《灶前八分钟》</h3>
+            <p>一个长镜头拍完晚饭准备过程，柴火声、锅盖声都保留。拍摄团队标注为黔东南某村。</p>
+            <span class="meta">10 月 24 日发布 · 8 分钟</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="updates">
+      <div class="section-head">
+        <h2>最新更新条目</h2>
+        <p>按上线时间倒序</p>
+      </div>
+      <ul class="update-list">
+        <li><time datetime="2026-11-08">今天 11-08</time><span class="t"><a href="/#picks">《村口老槐树》第 6 集</a> 上架，补第 5 集结尾 40 秒删节片段说明</span><span class="dur">18:40</span></li>
+        <li><time datetime="2026-11-07">昨天 11-07</time><span class="t"><a href="/#channels">川渝方言段子频道</a> 新增 3 条短段子，统一加简体字幕后重新归档</span><span class="dur">2:10 / 1:48 / 2:35</span></li>
+        <li><time datetime="2026-11-06">11-06</time><span class="t"><a href="/#picks">《夜班公交 21 路》</a> 正片条目补拍摄地坐标与演员名单</span><span class="dur">26:02</span></li>
+        <li><time datetime="2026-11-05">11-05</time><span class="t"><a href="/#news">平台版本差异核对</a>：同一短片两版字幕，时间轴相差 1.2 秒</span><span class="dur">—</span></li>
+        <li><time datetime="2026-11-03">11-03</time><span class="t"><a href="/#channels">纪录短打频道</a>《竹篾匠的一天》补手艺人访谈文字稿</span><span class="dur">14:12</span></li>
+        <li><time datetime="2026-11-01">11-01</time><span class="t"><a href="/#rank">本周榜单</a> 换榜，前五名变动 3 席</span><span class="dur">—</span></li>
+        <li><time datetime="2026-10-29">10-29</time><span class="t"><a href="/#picks">《小镇理发师》第 3 集</a> 上线，起用新收音设备</span><span class="dur">11:24</span></li>
+      </ul>
+    </section>
+
+    <section class="card" id="channels">
+      <div class="section-head">
+        <h2>分类入口</h2>
+        <p>点击进入对应频道索引</p>
+      </div>
+      <div class="channel-tags">
+        <a href="/#picks">村拍剧情短片</a>
+        <a href="/#picks">川渝方言段子</a>
+        <a href="/#picks">纪录短打</a>
+        <a href="/#picks">素人剪辑合集</a>
+        <a href="/#picks">赶集与庙会实拍</a>
+        <a href="/#picks">手艺人跟拍</a>
+        <a href="/#picks">夜班与通勤题材</a>
+        <a href="/#picks">小镇饮食日常</a>
+        <a href="/#picks">乡音配音与字幕版</a>
+        <a href="/#picks">单镜头长片</a>
+        <a href="/#picks">未删节原声版</a>
+      </div>
+      <p style="margin-top:16px;font-size:.86rem;color:var(--muted)">频道按内容形态划分，不按地区细分；同一团队常横跨两三个频道，条目页会写明所属频道。</p>
+    </section>
+
+    <section class="card analysis" id="analysis">
+      <div class="section-head">
+        <h2>深度解析：草根短片的“版本”比“集数”更容易出错</h2>
+      </div>
+      <p>同一条村拍短片，在不同平台往往存在三个版本：拍摄团队原始版、带字幕重剪版、以及被二次剪辑的合集版。三者时长差可达几十秒到几分钟，字幕时间轴也未必一致。找片时如果只记集数，很容易对不上号。</p>
+
+      <h3>一、时长差异先看片头片尾</h3>
+      <p>以《村口老槐树》第 5 集为例，拍摄团队在 10 月 18 日放出的原始版为 17 分 52 秒，片尾有 40 秒团队花絮；10 月 22 日某平台转码版为 17 分 10 秒，花絮被切掉，正片内容未变。对应到条目页，两个版本各占一条记录，不合并。</p>
+      <blockquote>可核对点：原始版时间码 17:52，转码版 17:10，差值 42 秒，与片尾花絮长度基本吻合。</blockquote>
+
+      <h3>二、字幕版本的说法差异</h3>
+      <p>川渝方言段子频道 11 月 7 日归档的三条短片中，有一条原声版和字幕版台词用词不同：原声说“搞快点”，字幕写成“快一点”。这是转写时的口语改写，不是对口型错误。遇到这类差异，条目页会同时保留两种文本，标出转写者。</p>
+
+      <table class="check-table">
+        <caption style="text-align:left;font-size:.8rem;color:var(--muted);padding-bottom:6px">版本核对表（示例条目）</caption>
+        <thead><tr><th>版本</th><th>时长</th><th>改动内容</th><th>标注来源</th></tr></thead>
+        <tbody>
+          <tr><td>原始版</td><td>17:52</td><td>含片尾花絮</td><td>拍摄团队账号</td></tr>
+          <tr><td>转码版</td><td>17:10</td><td>切掉片尾</td><td>平台转码记录</td></tr>
+          <tr><td>合集版</td><td>35:06</td><td>拼接前四季片段</td><td>素人剪辑者主页</td></tr>
+        </tbody>
+      </table>
+
+      <h3>三、判断素材是否被改动的方法</h3>
+      <ol>
+        <li>看片头 LOGO 出现的时间点，原始版通常在 0:02—0:05 之间，二次剪辑会前移或叠加水印。</li>
+        <li>比对同一句台词的现场环境声，剪辑拼接处环境声会突然断掉。</li>
+        <li>核对发布者在简介里写的拍摄日期，与片中出现的气候、作物状态是否吻合。</li>
+      </ol>
+      <p>以上方法不能百分百判定，但能筛掉大部分拼接版。可被反驳的地方在于：有些团队自己就会重剪旧片，环境声断点反而是官方版本的特征。</p>
+    </section>
+
+    <section class="card" id="guide">
+      <div class="section-head">
+        <h2>观看指南：从条目页到播放的四步</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <strong>先确认频道与片长</strong>
+          <p>同一名称可能同时存在于“村拍剧情短片”和“素人剪辑合集”，片长差一倍以上，先看时长再点开。</p>
+        </li>
+        <li>
+          <strong>核对版本标注</strong>
+          <p>条目页顶部有“原始版 / 字幕版 / 合集版”标签，选择你需要的版本，避免看到被剪过的内容。</p>
+        </li>
+        <li>
+          <strong>看更新说明</strong>
+          <p>补档、修正时间轴、替换音轨都会写进更新说明，11 月 5 日的字幕时间轴修正就是一例。</p>
+        </li>
+        <li>
+          <strong>收藏前记下条目编号</strong>
+          <p>条目编号形如 CS-1106-02，跨平台检索时比片名更可靠，尤其适合方言段子这类重名率高的内容。</p>
+        </li>
+      </ol>
+      <p style="font-size:.88rem;color:var(--ink-2)">播放页支持原声与字幕双轨切换，字幕版本单独标注转写者。移动端建议横屏观看纪录短打，竖屏段子保持原比例。</p>
+    </section>
+
+    <section class="card" id="faq">
+      <div class="section-head">
+        <h2>常见问题</h2>
+      </div>
+      <details class="faq">
+        <summary>村拍剧情短片为什么同一集有不同时长？</summary>
+        <div class="ans">拍摄团队发布原始版后，平台转码常会切掉片尾花絮或调整片头，导致时长差几十秒。以《村口老槐树》第 5 集为例，原始版 17 分 52 秒，转码版 17 分 10 秒，正片内容一致。</div>
+      </details>
+      <details class="faq">
+        <summary>方言段子的字幕版和原声版台词不一致，以哪个为准？</summary>
+        <div class="ans">原声版是拍摄时的现场录音，字幕版由转写者整理，口语词会被改成书面词，比如“搞快点”写成“快一点”。理解台词以原声为准，检索文字以字幕版为准，两者在条目页并列保留。</div>
+      </details>
+      <details class="faq">
+        <summary>纪录短打里的拍摄地信息从哪里来？</summary>
+        <div class="ans">多数来自拍摄团队在简介里写的地名，少数由条目编辑根据画面中的路牌、方言和作物核对后补注。补注会标“核对”字样，与团队自述区分开。</div>
+      </details>
+      <details class="faq">
+        <summary>素人剪辑合集能直接当原片看吗？</summary>
+        <div class="ans">不建议。合集版会改变片段顺序，环境声在拼接处断掉，部分台词被截断。看剧情应回到原始版，合集版适合回顾熟悉内容。</div>
+      </details>
+      <details class="faq">
+        <summary>条目编号 CS-1106-02 的含义是什么？</summary>
+        <div class="ans">CS 是条目库前缀，1106 表示 11 月 6 日入库，02 是当天第二条。编号在补档和版本更新时保持不变，便于跨平台检索。</div>
+      </details>
+    </section>
+
+    <section class="card" id="comments">
+      <div class="section-head">
+        <h2>用户评论</h2>
+        <p>来自条目页的公开留言</p>
+      </div>
+      <div class="comment-grid">
+        <div class="comment">
+          <div class="who"><span>老槐树下的二舅</span><span class="score">推荐</span></div>
+          <p>第 6 集那块空地争得挺真实，我家村里去年也为晒场吵过。就是片尾花絮太短，没看够。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span>夜班通勤族</span><span class="score">一般</span></div>
+          <p>《夜班公交 21 路》画面暗，手机上看司机脸都看不清。内容还行，但 26 分钟有点拖。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span>竹篾爱好者</span><span class="score">推荐</span></div>
+          <p>《竹篾匠的一天》全程没旁白这点很好，破竹那段的声响录得干净。希望补上师傅的名字。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span>方言收集者</span><span class="score">推荐</span></div>
+          <p>11 月 7 日那三条川渝段子字幕做得细，“搞快点”没硬改成书面语，这点比别的站强。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span>剪辑观察员</span><span class="score">吐槽</span></div>
+          <p>《赶集路上》合集版拼接痕迹太明显，第三段环境声直接断，当原片看会误会剧情顺序。</p>
+        </div>
+        <div class="comment">
+          <div class="who"><span>小镇住户</span><span class="score">中性</span></div>
+          <p>《小镇理发师》第 3 集节奏比前两集慢，价目表那段有点啰嗦，但方言听着舒服。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+      </div>
+      <ul class="news-list">
+        <li><span class="date">11-05</span><span class="ttl">两版字幕时间轴差 1.2 秒，转写者已更新说明</span><span class="src">条目校对记录</span></li>
+        <li><span class="date">11-02</span><span class="ttl">纪录短打频道补手艺人访谈文字稿，共 2,400 字</span><span class="src">频道公告</span></li>
+        <li><span class="date">10-30</span><span class="ttl">某短视频平台调整转码规格，片尾花絮普遍被切</span><span class="src">平台更新日志</span></li>
+        <li><span class="date">10-27</span><span class="ttl">鲁西南村拍团队公布第 7 集拍摄计划，预计 12 月上线</span><span class="src">团队账号</span></li>
+        <li><span class="date">10-23</span><span class="ttl">方言段子归档规则调整：原声与字幕分列入库</span><span class="src">条目规范</span></li>
+      </ul>
+    </section>
+
+    <section class="card" id="rank">
+      <div class="section-head">
+        <h2>本周榜单</h2>
+        <p>按 11 月 1 日至 11 月 8 日条目页点击排序</p>
+      </div>
+      <ol class="rank-list">
+        <li><span>《村口老槐树》第 6 集</span><span class="hot">↑2</span></li>
+        <li><span>《夜班公交 21 路》正片</span><span class="hot">新上榜</span></li>
+        <li><span>川渝方言段子·三条归档</span><span class="hot">↑5</span></li>
+        <li><span>《竹篾匠的一天》纪录短打</span><span class="hot">—</span></li>
+        <li><span>《小镇理发师》第 3 集</span><span class="hot">↓3</span></li>
+      </ol>
+      <p style="font-size:.8rem;color:var(--muted);margin-top:12px">榜单只统计条目页点击，不含播放次数；新上榜条目为本周首次进入前五。</p>
+    </section>
+
+    <section class="card" id="rec">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+      </div>
+      <div class="rec-tags">
+        <a href="/#picks">鲁西南村拍剧情</a>
+        <a href="/#picks">川渝方言短段子</a>
+        <a href="/#picks">赶集实拍长镜头</a>
+        <a href="/#picks">手艺人跟拍纪录</a>
+        <a href="/#picks">夜班通勤题材短片</a>
+        <a href="/#picks">未删节原声版</a>
+        <a href="/#picks">单镜头八分钟</a>
+        <a href="/#picks">小镇饮食日常</a>
+        <a href="/#guide">版本核对方法</a>
+        <a href="/#faq">条目编号说明</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside aria-label="侧栏">
+    <div class="side-card">
+      <h2>栏目导航</h2>
+      <ul class="side-nav">
+        <li><a href="/#overview">内容概览</a></li>
+        <li><a href="/#picks">精选短片推荐</a></li>
+        <li><a href="/#updates">最新更新条目</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#guide">观看指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#rank">本周榜单</a></li>
+        <li><a href="/#rec">相关推荐</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h2>本周热条目</h2>
+      <ul class="side-related">
+        <li><a href="/#picks">《村口老槐树》第 6 集</a></li>
+        <li><a href="/#picks">《夜班公交 21 路》正片</a></li>
+        <li><a href="/#picks">川渝方言段子归档三条</a></li>
+        <li><a href="/#picks">《竹篾匠的一天》</a></li>
+        <li><a href="/#picks">《赶集路上》合集版</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h2>条目规范摘要</h2>
+      <p style="font-size:.84rem;color:var(--ink-2);margin-bottom:8px">每条记录写明：片长、版本、发布日、拍摄地、转写者。补档不改编号。</p>
+      <p style="font-size:.84rem;color:var(--ink-2);margin:0">数据为示例条目，日期在 2026 年 10 月 9 日至 11 月 8 日之间。</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 64 64" role="img" aria-label="草叶图形标志">
+        <rect width="64" height="64" rx="14" fill="#1e4a28"/>
+        <path d="M32 52c-10-7-15-13-15-21a8.5 8.5 0 0 1 15-5 8.5 8.5 0 0 1 15 5c0 8-5 14-15 21z" fill="#c9e8b0"/>
+        <path d="M32 50V23" stroke="#1e4a28" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <strong>就要草视频免费在线观看</strong>
+    </div>
+    <p style="margin-bottom:var(--space-3);max-width:40em">按拍摄方式与片长编条目，把原始版、字幕版、合集版分开记录，找片先看版本再点开。</p>
+    <div class="footer-cols">
+      <div>
+        <h3>内容频道</h3>
+        <ul>
+          <li><a href="/#picks">村拍剧情短片</a></li>
+          <li><a href="/#picks">川渝方言段子</a></li>
+          <li><a href="/#picks">纪录短打</a></li>
+          <li><a href="/#picks">素人剪辑合集</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>使用帮助</h3>
+        <ul>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#analysis">版本核对方法</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>条目动态</h3>
+        <ul>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">本周榜单</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:.8rem;margin-bottom:8px">站内短片条目、评论与点击数据均为示例，用于说明条目结构与检索方式，日期落在 2026 年 10 月 9 日至 11 月 8 日之间。</p>
+    <div class="footer-bottom">
+      <span>页面更新时间：2026 年 11 月 8 日，对应更新项为《村口老槐树》第 6 集上架与第 5 集删节说明。</span><br>
+      <span>© 2026 就要草视频免费在线观看条目库 · 内容整理与版本说明</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menu-btn');
+  var nav=document.getElementById('main-nav');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.innerWidth<=720){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  var searchInput=document.getElementById('search-input');
+  var searchBtn=document.getElementById('search-btn');
+  var feedback=document.getElementById('search-feedback');
+
+  function doSearch(){
+    var kw=searchInput.value.trim();
+    if(!kw){
+      feedback.style.display='block';
+      feedback.textContent='请输入条目名、频道名或条目编号，例如“老槐树”或“CS-1106-02”。';
+      return;
+    }
+    var nodes=document.querySelectorAll('main h2, main h3, main .update-list .t, main .pick-card p, main .comment p, main .news-list .ttl');
+    var hit=null;
+    for(var i=0;i<nodes.length;i++){
+      if(nodes[i].textContent.indexOf(kw)!==-1){hit=nodes[i];break;}
+    }
+    feedback.style.display='block';
+    if(hit){
+      feedback.textContent='已找到与“'+kw+'”相关的内容，定位到“'+hit.textContent.slice(0,26)+'”。';
+      var target=hit.closest('section');
+      if(target){
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    }else{
+      feedback.textContent='没有找到与“'+kw+'”匹配的条目，可换成片名简称、拍摄地或条目编号再试。';
+    }
+  }
+  searchBtn.addEventListener('click',doSearch);
+  searchInput.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();doSearch();}
+  });
+
+  var backTop=document.getElementById('back-top');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>420){backTop.classList.add('show');}
+    else{backTop.classList.remove('show');}
+  },{passive:true});
+  backTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var sideLinks=document.querySelectorAll('.side-nav a');
+  var sections=document.querySelectorAll('main section[id]');
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          sideLinks.forEach(function(a){
+            a.classList.toggle('active',a.getAttribute('href')==='/'+'#'+en.target.id);
+          });
+        }
+      });
+    },{rootMargin:'-120px 0px -60% 0px'});
+    sections.forEach(function(s){obs.observe(s);});
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"就要草视频免费在线观看",
+  "inLanguage":"zh-CN",
+  "description":"草根短片条目库，按村拍剧情、方言段子、纪录短打与剪辑合集分类，标注版本与片长。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"村拍剧情短片为什么同一集有不同时长？",
+      "acceptedAnswer":{"@type":"Answer","text":"拍摄团队发布原始版后，平台转码常会切掉片尾花絮或调整片头，导致时长差几十秒。《村口老槐树》第 5 集原始版 17 分 52 秒，转码版 17 分 10 秒，正片内容一致。"}
+    },
+    {
+      "@type":"Question",
+      "name":"方言段子的字幕版和原声版台词不一致，以哪个为准？",
+      "acceptedAnswer":{"@type":"Answer","text":"原声版是现场录音，字幕版由转写者整理，口语词会被改成书面词。理解台词以原声为准，检索文字以字幕版为准，两者在条目页并列保留。"}
+    },
+    {
+      "@type":"Question",
+      "name":"纪录短打里的拍摄地信息从哪里来？",
+      "acceptedAnswer":{"@type":"Answer","text":"多数来自拍摄团队简介里的地名，少数由条目编辑根据路牌、方言与作物核对后补注，补注会标“核对”字样。"}
+    },
+    {
+      "@type":"Question",
+      "name":"素人剪辑合集能直接当原片看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不建议。合集版会改变片段顺序，环境声在拼接处断掉，部分台词被截断。看剧情应回到原始版。"}
+    },
+    {
+      "@type":"Question",
+      "name":"条目编号 CS-1106-02 的含义是什么？",
+      "acceptedAnswer":{"@type":"Answer","text":"CS 是条目库前缀，1106 表示 11 月 6 日入库，02 是当天第二条。编号在补档和版本更新时保持不变。"}
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
